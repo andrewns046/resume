@@ -1,0 +1,44 @@
+/*Custom Colors*/
+:root {
+	--sailor-blue: #2e4a62;
+	--darken: #1d1d1d;
+	--dark-purple: #603cba;
+	--metro-magenta: #ff0097;
+}
+
+body {
+	color: whitesmoke;
+	font-family: "Courier New", courier;
+	background: var(--darken)
+}
+
+
+/* These button style ovrides give neon effects */
+[data-target="#myStoryCollapse"]{
+	background-color: transparent;
+	border-color: var(--metro-magenta);
+	color: var(--metro-magenta);
+}
+
+[data-target="#myStoryCollapse"]:hover {
+	background-color: transparent;
+	border-color: var(--metro-magenta);
+	border-width: 2.1px;
+	font-weight: bold;
+	color: var(--metro-magenta);
+}
+
+[data-target="#myStoryCollapse"]:focus {
+	box-shadow: none;
+}
+
+#intro {
+	background: var(--darken);
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+#myStory {
+	background: var(--darken);
+	padding: 2rem;
+}
