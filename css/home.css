@@ -12,10 +12,12 @@ body {
 	background: var(--darken)
 }
 
-
-/* These button style ovrides give neon effects */
-[data-target="#myStoryCollapse"]{
+.neon {
 	background-color: transparent;
+}
+
+/* These button style overides to give neon effects */
+[data-target="#myStoryCollapse"]{
 	border-color: var(--metro-magenta);
 	color: var(--metro-magenta);
 }
@@ -23,8 +25,8 @@ body {
 [data-target="#myStoryCollapse"]:hover {
 	background-color: transparent;
 	border-color: var(--metro-magenta);
-	border-width: 2.1px;
 	font-weight: bold;
+	border-width: 2.01px;
 	color: var(--metro-magenta);
 }
 
@@ -32,13 +34,56 @@ body {
 	box-shadow: none;
 }
 
-#intro {
+#summary {
 	background: var(--darken);
 	margin-bottom: 0;
 	border-radius: 0;
 }
 
-#myStory {
-	background: var(--darken);
-	padding: 2rem;
+#aboutMe {
+	padding: 4rem;
 }
+
+/* --Skill Bar Section-- */
+
+/* Make sure that padding behaves as expected */
+#barContainer {
+	padding: 3rem;
+	box-sizing:border-box
+}
+
+/* Skill Bar Styles */
+.bar {
+  width: 100%; /* Full width */
+  height: 10px;
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  color: white; /* White text color */
+
+}
+
+.skill {
+	height: inherit;
+}
+
+.skill-one {
+	width: 90%; 
+	background-color: #4CAF50;
+} 
+
+.skill-two {
+	width: 80%; 
+	background-color: #2196F3;
+} 
+.skill-three {
+	width: 100%; 
+	background-color: #f44336;
+} 
+
+.skill-four {
+	width: 100%; 
+	background-color: yellow;
+} 
