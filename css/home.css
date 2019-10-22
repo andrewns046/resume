@@ -4,6 +4,12 @@
 	--darken: #1d1d1d;
 	--dark-purple: #603cba;
 	--metro-magenta: #ff0097;
+	--metro-green: #00a300;
+	--metro-light-purple: #9f00a7;
+	--metro-yellow: #ffc40d;
+	--metro-blue: #2d98ef;
+	--metro-red: #ee1111;
+
 }
 
 body {
@@ -57,7 +63,7 @@ body {
 /* Skill Bar Styles */
 .bar {
   width: 100%; /* Full width */
-  height: 10px;
+  height: 3px;
   background-color: #ddd; /* Grey background */
 }
 
@@ -73,19 +79,19 @@ body {
 
 .skill-one {
 	width: 77%; 
-	background-color: #4CAF50;
+	background-color: var(--metro-green);
 } 
 
 .skill-two {
 	width: 80%; 
-	background-color: #2196F3;
+	background-color: var(--metro-blue);
 } 
 .skill-three {
 	width: 100%; 
-	background-color: #f44336;
+	background-color: var(--metro-red);
 } 
 
 .skill-four {
 	width: 100%; 
-	background-color: yellow;
+	background-color: var(--metro-yellow);
 } 
