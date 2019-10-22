@@ -9,11 +9,17 @@
 body {
 	color: whitesmoke;
 	font-family: "Courier New", courier;
-	background: var(--darken)
+	background: var(--darken);
 }
+
 
 .neon {
 	background-color: transparent;
+}
+
+.neon-box {
+	background-color: transparent;
+	border-radius: 2px;	
 }
 
 /* These button style overides to give neon effects */
@@ -38,10 +44,6 @@ body {
 	background: var(--darken);
 	margin-bottom: 0;
 	border-radius: 0;
-}
-
-#aboutMe {
-	padding: 4rem;
 }
 
 /* --Skill Bar Section-- */
