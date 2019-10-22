@@ -24,58 +24,124 @@ Date Created: 10/03/2019
 </head>
 
 <body>
+<!-- Navbar Section -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <!--
-    <a class="navbar-brand" href="#">Overview</a>
-    -->
     <ul class="navbar-nav mr-auto">
     	<li class="nav-item active">
-        	<a class="nav-link" href="#intro">Summary<span class="sr-only">(current)</span></a>
+        	<a class="nav-link" href="#summary">Summary<span class="sr-only">(current)</span></a>
       	</li>
       	<li class="nav-item">
         	<a class="nav-link" href="#education">Education</a>
       	</li>
       	<li class="nav-item">
-        	<a class="nav-link" href="#">Experience</a>
+        	<a class="nav-link" href="#experience">Experience</a>
       	</li>
       	<li class="nav-item">
-        	<a class="nav-link" href="#">Projects & Skills</a>
+        	<a class="nav-link" href="#skills">Projects & Skills</a>
       	</li>
       	<li class="nav-item">
-        	<a class="nav-link" href="#">Interests</a>
+        	<a class="nav-link" href="#interest">Interests</a>
       	</li>
     </ul>
-
-    <span class="navbar-text">Andrew N. Sanchez</span>
-
+    <span class="navbar-text">Andrew Sanchez</span>
   </div>
 </nav>
 
-<div class="jumbotron" id="intro">
+<!-- Summary Section -->
+<div class="jumbotron" id="summary">
   <div class="container text-center">
     <!-- Few words to sell yourself -->
     <h2>Professional, Efficient, Experienced</h2><br>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#myStoryCollapse" 
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#myStoryCollapse" 
             aria-expanded="false" aria-controls="myStoryCollapse">Motivation</button>
   </div>
 </div>
-
-<div class="row" id="aboutMe">
-  <div class="col"> 
-    <div class="collapse" id="myStoryCollapse">
-      <!--Put your motivation paragraphs here-->
-      <p>I am a strong believer that the toughest problems get solved through a collaboration of talents and experiences. Becoming an engineer presented extra challenges for me, due to lack of resources and guidance. However, my determination to create change in my life and the lives of others is what motivates to push myself further.</p>
+<div class="row" id="aboutMe"> 
+  <div class="collapse" id="myStoryCollapse">
+    <!--Put your motivation paragraph here-->
+    <p>I am a strong believer that the toughest problems get solved through a collaboration of talents and experiences. Becoming an engineer presented extra challenges for me, due to lack of resources and guidance. However, my determination to create change in my life and the lives of others is what motivates to push myself further.</p>
+  </div>
+</div>
+<br>
+<!-- Education Section -->
+<div class="container text-center">
+  <h3>Degree and Associations</h3>
+</div><br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+      <!-- Degree Card and Caption -->
+      <div class="card border-primary neon mb-3" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body text-primary">
+          <h5 class="card-title">B.S Computer Engineering from UC San Diego</h5>
+          <p class="card-text">Years Attended: 2015 - 2019</p>
+          <p class="card-text">Upper Major GPA: 3.18</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg">
+      <!-- Red Cross Card and Caption -->
+      <div class="card border-primary neon mb-3" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body text-primary">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg">
+      <!-- ECE Makerspace Card and Caption -->
+      <div class="card border-primary neon mb-3" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body text-primary">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<div class="row" id="education">
-  <div class="col">
+<div class="container text-center">
+  <h3>Secondary Education & Standardized Test Scores</h3>
+</div><br>
+</div>
+<div class="container">
+  <div class="row" id="education">
+    <div class="col-lg">
+      <div class="card text-white bg-primary mb-3" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg">
+      <!-- Skill bar of test scores -->
+      <div id="barContainer">
+        <p>SAT Score: 1850</p>
+        <div class="bar">
+          <div class="skills skill skill-one"></div>
+        </div>
+        <p>AP Computer Science Score: 4/5</p>
+        <div class="bar">
+          <div class="skills skill skill-two"></div>
+        </div>
+        <p>AP Calculus AB Score: 5/5</p>
+        <div class="bar">
+          <div class="skills skill skill-three"></div>
+        </div>
+        <p>AP Calulus BC Score: 5/5</p>
+        <div class="bar">
+          <div class="skills skill skill-four"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<!--
-<div class="container-fluid bg-3 text-center">    
+<div class="container bg-3 text-center">    
   <h3>Some of my Work</h3><br>
   <div class="row">
     <div class="col-sm-3">
@@ -97,7 +163,7 @@ Date Created: 10/03/2019
   </div>
 </div><br>
 
-<div class="container-fluid bg-3 text-center">    
+<div class="container bg-3 text-center">    
   <div class="row">
     <div class="col-sm-3">
       <p>Some text..</p>
@@ -116,8 +182,8 @@ Date Created: 10/03/2019
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
-</div><br><br>
--->
+</div><br>
+
 <footer class="container-fluid text-center">
   <p>Social Media Links</p>
 </footer>
