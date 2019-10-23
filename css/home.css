@@ -19,22 +19,14 @@ body {
 }
 
 
+/* These button style overides to give neon effects */
 .neon {
 	background-color: transparent;
-}
-
-.neon-box {
-	background-color: transparent;
-	border-radius: 2px;	
-}
-
-/* These button style overides to give neon effects */
-[data-target="#myStoryCollapse"]{
 	border-color: var(--metro-magenta);
 	color: var(--metro-magenta);
 }
 
-[data-target="#myStoryCollapse"]:hover {
+.neon:hover {
 	background-color: transparent;
 	border-color: var(--metro-magenta);
 	font-weight: bold;
@@ -42,7 +34,7 @@ body {
 	color: var(--metro-magenta);
 }
 
-[data-target="#myStoryCollapse"]:focus {
+.neon:focus {
 	box-shadow: none;
 }
 
@@ -52,46 +44,6 @@ body {
 	border-radius: 0;
 }
 
-/* --Skill Bar Section-- */
-
-/* Make sure that padding behaves as expected */
-#barContainer {
-	padding: 3rem;
-	box-sizing:border-box
+hr {
+	background-color: var(--metro-magenta);
 }
-
-/* Skill Bar Styles */
-.bar {
-  width: 100%; /* Full width */
-  height: 3px;
-  background-color: #ddd; /* Grey background */
-}
-
-.skills {
-  text-align: right; /* Right-align text */
-  color: white; /* White text color */
-
-}
-
-.skill {
-	height: inherit;
-}
-
-.skill-one {
-	width: 77%; 
-	background-color: var(--metro-green);
-} 
-
-.skill-two {
-	width: 80%; 
-	background-color: var(--metro-blue);
-} 
-.skill-three {
-	width: 100%; 
-	background-color: var(--metro-red);
-} 
-
-.skill-four {
-	width: 100%; 
-	background-color: var(--metro-yellow);
-} 

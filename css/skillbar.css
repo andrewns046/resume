@@ -1,0 +1,39 @@
+#barContainer {
+	padding: 3rem;
+	box-sizing:border-box;
+}
+
+.bar {
+  width: 100%; /* Full width */
+  height: 3px;
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  color: white; /* White text color */
+
+}
+
+.skill {
+	height: inherit;
+}
+
+.skill-one {
+	width: 77%; 
+	background-color: var(--metro-green);
+} 
+
+.skill-two {
+	width: 80%; 
+	background-color: var(--metro-blue);
+} 
+.skill-three {
+	width: 100%; 
+	background-color: var(--metro-red);
+} 
+
+.skill-four {
+	width: 100%; 
+	background-color: var(--metro-yellow);
+} 
