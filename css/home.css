@@ -12,38 +12,71 @@
 
 }
 
-body {
-	color: whitesmoke;
+body, #summary {
+	background-color: var(--darken);
 	font-family: "Courier New", courier;
-	background: var(--darken);
+	color: white;
 }
 
+.card {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+	border:0;
+}
+
+.card-text {
+	color: grey;
+}
+
+.card-title {
+	text-decoration: overline;
+	color: white;
+}
+
+#education {
+	padding-top: 100px;
+}
+
+#education hr {
+	background-color: var(--metro-magenta);
+}
+
+#experience hr {
+	background-color: var(--metro-blue);
+}
+
+#projects {
+	padding-top: 100px;
+}
 
 /* These button style overides to give neon effects */
 .neon {
 	background-color: transparent;
-	border-color: var(--metro-magenta);
-	color: var(--metro-magenta);
+	border-left-color: var(--metro-yellow);
+	border-right-color: var(--metro-red);
+	border-bottom-color: var(--metro-green);
+	border-top-color: var(--metro-blue);
+	color: white;
 }
 
 .neon:hover {
 	background-color: transparent;
-	border-color: var(--metro-magenta);
-	font-weight: bold;
+	border-left-color: var(--metro-yellow);
+	border-right-color: var(--metro-red);
+	border-bottom-color: var(--metro-green);
+	border-top-color: var(--metro-blue);
 	border-width: 2.01px;
-	color: var(--metro-magenta);
 }
 
 .neon:focus {
 	box-shadow: none;
 }
 
-#summary {
-	background: var(--darken);
-	margin-bottom: 0;
-	border-radius: 0;
-}
-
-hr {
-	background-color: var(--metro-magenta);
+.white-container {
+	size: 100%;
+	background-color: white;
+	color:black;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
