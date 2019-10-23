@@ -22,15 +22,18 @@ Date Created: 10/03/2019
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $('body').scrollspy({ target: '#navbar-example' })
+  </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="0">
 <!-- Navbar Section -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+<nav id="main-nav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-          <a class="nav-link" href="#summary">Summary<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+          <a class="nav-link" href="#main-nav">Summary<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#experience">Experience</a>
@@ -48,6 +51,7 @@ Date Created: 10/03/2019
     <span class="navbar-text">Andrew Sanchez</span>
   </div>
 </nav>
+
 <!-- Summary Section -->
 <div class="jumbotron" id="summary">
   <div class="container text-center">
@@ -57,10 +61,11 @@ Date Created: 10/03/2019
             aria-expanded="false" aria-controls="myStoryCollapse">Objective</button>
     <div class="collapse" id="myStoryCollapse"><br>
     <!--Put your motivation paragraph here-->
-    <p>Lack of guidance and resources, in the community I grew up in, inspired me to become a leader who’s active in community enrichment. I am confident that the skills I've developed and my unique experience as an Engineer makes me a competitive candidate amongst others.</p>
+    <p>Lack of guidance and resources, in the community I grew up in, inspired me to become a leader who’s active in community enrichment. I am confident that the skills I've developed and my unique experience as an Engineer makes me a competitive candidate for a career oppurtunity with your company.</p>
   </div>
   </div>
 </div>
+<!-- Experience Section -->
 <div class="white-container">
   <div class="container" id=experience>
     <h3>Professional Experience <img src="./res/connection.svg" width="60px" height="60px"></h3>
@@ -70,25 +75,52 @@ Date Created: 10/03/2019
     <div class="row">
       <div class="col-sm">
         <img src="./res/ib.png" class="img-responsive" style="width:100%" alt="Image">
-        <h5>Software QA Engineering Intern</h5>
-        <ul>
-          <li>Test Writing and Planning</li>
-          <li>Automation Training</li>
-          <li>Agile Development</li>
-          <li>Worked on over +20 Sites</li>
-        </ul>
       </div>
       <div class="col-sm"> 
         <img src="./res/trio_ub.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <h5>Non-Credential Instructor</h5>
       </div>
       <div class="col-sm"> 
         <img src="./res/ucsd_ece.png" class="img-responsive" style="width:100%" alt="Image">
-        <h5>ECE Lab Course Tutor</h5>
       </div>
-      
     </div>
-  </div><br>
+    <br>
+    <div class="row">
+      <div class="col-sm">
+        <h5 class="experience-title">Software QA Engineering Intern</h5>
+        <div class ="experience-description">
+          <p>Sep,2019-Present / El Segundo, CA</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-info">Test Writing and Planning</li>
+            <li class="list-group-item list-group-item-info">Automation Training</li>
+            <li class="list-group-item list-group-item-info">Agile Project Managment</li>
+            <li class="list-group-item list-group-item-info">Worked on over +50 Sites</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm">
+        <h5 class="experience-title">Non-Cred Instructor</h5>
+        <div class ="experience-description">
+          <p>Sep,2019-Present / Los Angeles, CA</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-danger">Topics in Computer Science </li>
+            <li class="list-group-item list-group-item-danger">Topics in Electrical Engineering</li>
+            <li class="list-group-item list-group-item-danger">Arduino and Raspberry Pi Projects</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm">
+        <h5 class="experience-title">ECE Lab Course Tutor</h5>
+        <div class ="experience-description">
+          <p>Apr,2019-Jun,2019 / San Deigo, CA</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-primary">LabVIEW Programming, SolidWorks, and Systems</li>
+            <li class="list-group-item list-group-item-primary">Serial Communication</li>
+            <li class="list-group-item list-group-item-primary">Guided lab equipment usage and safety</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Education Section -->
 <div class="container" id=education>

@@ -16,6 +16,7 @@ body, #summary {
 	background-color: var(--darken);
 	font-family: "Courier New", courier;
 	color: white;
+	position: relative;
 }
 
 .card {
@@ -44,6 +45,22 @@ body, #summary {
 
 #experience hr {
 	background-color: var(--metro-blue);
+}
+
+#projects hr {
+	background-color: var(--metro-yellow);
+}
+
+.experience-title {
+	text-decoration: overline;
+}
+
+.experience-description {
+	margin-top: 1rem;
+}
+
+.experience-description p {
+	font-style: italic;
 }
 
 #projects {
