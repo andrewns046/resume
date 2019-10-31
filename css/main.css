@@ -1,0 +1,47 @@
+:root {
+	--sailor-blue: #2e4a62;
+	--darken: #1d1d1d;
+	--dark-purple: #603cba;
+	--metro-magenta: #ff0097;
+	--metro-green: #00a300;
+	--metro-light-purple: #9f00a7;
+	--metro-yellow: #ffc40d;
+	--metro-blue: #2d98ef;
+	--metro-red: #ee1111;
+
+}
+
+#logoCenter {
+    display: block;
+    margin: 1em auto 1em;
+    font-size: 2.3em;
+}
+
+.card {
+	margin-top: 2.3em;
+}
+
+.card img {
+	display: none;
+}
+
+#sectionsNavbar {
+	margin: 0 auto;
+}
+
+#sectionsNavbar h5 {
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+#sectionsNavbar li {
+	display: none;
+	list-style: none;
+}
+
+#sectionsNavbar li:hover {
+	list-style: none;
+	border-color: var(--metro-magenta);
+	color: var(--metro-magenta);
+	z-index: 100;
+}
