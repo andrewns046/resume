@@ -11,17 +11,18 @@
 
 }
 
+#content-rule {
+	margin-top: 2.3em;
+}
+
 #logoCenter {
     display: block;
     margin: 1em auto 1em;
     font-size: 2.3em;
 }
 
-.card {
-	margin-top: 2.3em;
-}
 
-.card img {
+#education {
 	display: none;
 }
 
