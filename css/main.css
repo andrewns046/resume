@@ -25,22 +25,30 @@
 	display: none;
 }
 
-#sectionsNavbar {
+nav {
 	position: fixed;
 	width: 22.5em;
 }
 
-#sectionsNavbar h5 {
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	color: var(--metro-magenta);
+}
+
+nav h5 {
 	display: inline-block;
 	margin-left: 1rem;
 }
 
-#sectionsNavbar li {
-	display: none;
+nav li {
 	list-style: none;
 }
 
-#sectionsNavbar li:hover {
+nav li:hover {
 	list-style: none;
 	border-color: var(--metro-magenta);
 	color: var(--metro-magenta);
