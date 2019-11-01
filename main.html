@@ -32,11 +32,11 @@
             		<rect x="340" width="20" height="80" style="fill:rgb(254,251,100)" />
             		<text x="10" y="60" fill="white">Andrew Sanchez</text>
             		Sorry, your browser does not support inline SVG.
-        		</svg>
+        </svg>
 				<ul id="sectionsNavbar" class="list-group">
   					<li id="section1" class="list-group-item">
   						<img src="./res/goal.svg" width="30px" height="30px">
-  						<h5>Objective<h5>
+  						<h5>Objective</h5>
   					</li>
   					<li id="section2" class="list-group-item">
   						<img src="./res/cap.svg" width="30px" height="30px">
@@ -48,7 +48,7 @@
   					</li>
   					<li id="section4" class="list-group-item">
   						<img src="./res/project.svg" width="30px" height="30px"> 
-  						<h5>Project Experience</h5>
+  						<h5>Projects</h5>
   					</li>
   					<li id="section5" class="list-group-item">
   						<img src="./res/code.svg" width="30px" height="30px"> 
@@ -59,20 +59,35 @@
   						<h5>Associations</h5>
   					</li>
   					<li id="section7" class="list-group-item">
-  						<img src="./res/message.svg" width="30px" height="30px"> 
+  					  <img src="./res/message.svg" width="30px" height="30px"> 
   						<h5>Contact</h5>
   					</li>
+            <li id="contact" class="list-group-item hidden-section">
+                <p><b>Phone:</b> (323)-787-5129</p>
+                <p><b>Email:</b> andrew.sanchez046@gmail.com</p>
+            </li>
 				</ul>
 			</div>
 			<div id="content-rule" class="col col-lg-8">
-				<div class="jumbotron">
+				
+        <!-- Welcome Message -->
+        <div class="jumbotron">
           <h1>Welcome!</h1>
-          <p>First, thank you for visiting my resume. This site serves not only as my resume, but also a reference
-             to my Upward Bound students also looking to build their own websites.</p>    
+          <p>Thank you for visiting my site. This site serves not only as my resume, but also a reference
+             to my Upward Bound students who are currently learning to build their own websites.</p>    
         </div>
-        <!-- sections 1 content -->
-      	<div id="education" class="card border w-100" style="width: 18rem;">
-        	<div class="card-body">
+
+        <!-- section 1 content -->
+        <div id="objective" class="card border-light w-100 hidden-section">
+          <div class="card-body">
+            <h2>Objective</h2>
+          </div>
+        </div>
+
+        <!-- sections 2 content -->
+      	<div id="education" class="card border-light w-100 hidden-section" style="width: 18rem;">
+          <div class="card-body">
+              <h2>Education</h2>
           		<h5 class="card-title education-title">B.S Computer Engineering from UC San Diego (2015-2019)</h5>
         			<p class="card-text">Upper Major GPA: 3.18</p>
         	</div>
@@ -96,7 +111,34 @@
       		</div>
 			  </div>
 
-        <!-- section 2 content-->
+        <!-- section 3 content-->
+        <div id="experience" class="card border-light w-100 hidden-section">
+          <div class="card-body">
+            <h2>Work Experience</h2>
+          </div>
+        </div>
+
+        <!-- section 4 content-->
+        <div id="projects" class="card border-light w-100 hidden-section">
+          <div class="card-body">
+            <h2>Projects</h2>
+          </div>
+        </div>
+
+        <!-- section 5 content-->
+        <div id="skills" class="card border-light w-100 hidden-section">
+          <div class="card-body">
+            <h2>Skills</h2>
+          </div>
+        </div>
+
+        <!-- section 6 content-->
+        <div id="associations" class="card border-light w-100 hidden-section">
+          <div class="card-body">
+            <h2>Associations</h2>
+          </div>
+        </div>
+
 		</div>
 	</div>
   <footer>
