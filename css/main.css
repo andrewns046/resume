@@ -21,8 +21,20 @@
     font-size: 2.3em;
 }
 
+#gradPic {
+	max-height: 400px;
+}
+
 .hidden-section {
 	display: none;
+}
+
+.col img {
+	max-width: 100%
+}
+
+.progress {
+	height: 2px;
 }
 
 nav {
