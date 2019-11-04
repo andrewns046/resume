@@ -1,21 +1,29 @@
-$(document).ready(function(){
+//load differently for mobile
+if (typepf window.orientation !== 'undefined') {
+
+}
+else {
+	$(document).ready(function(){
 	$("#section1").fadeIn();
 	$("#section1").click(function() {
 		//todo: trigger section load
 		$(".jumbotron").hide();
+		//load
 		$("#objective").show(500);
 	});
 
 	$("#section2").fadeIn(1000);
 	$("#section2").click(function() {
 		$(".jumbotron").hide();
-		$("#education").show(500);
+		$("#education").load("../content.html #education");
+		//show
 	});
 	
 	$("#section3").fadeIn(2000);
 	$("#section3").click(function() {
 		//todo: trigger section load
 		$(".jumbotron").hide();
+		//load
 		$("#experience").show(500);
 	});
 	
@@ -47,3 +55,5 @@ $(document).ready(function(){
 		$("#contact").show(500);
 	});
 });
+}
+
