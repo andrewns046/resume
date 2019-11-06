@@ -25,10 +25,6 @@
 	max-height: 400px;
 }
 
-.hidden-section {
-	display: none;
-}
-
 .col img {
 	max-width: 100%
 }
@@ -42,15 +38,6 @@ nav {
 	width: 22.5em;
 }
 
-nav a {
-	text-decoration: none;
-	color: black;
-}
-
-nav a:hover {
-	color: var(--metro-magenta);
-}
-
 nav h5 {
 	display: inline-block;
 	margin-left: 1rem;
@@ -60,7 +47,7 @@ nav li {
 	list-style: none;
 }
 
-nav li:hover {
+.list-group-item:hover {
 	list-style: none;
 	border-color: var(--metro-magenta);
 	color: var(--metro-magenta);

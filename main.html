@@ -1,4 +1,4 @@
-<!--Need to test using python server-->
+<!-- Need to test using python server-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +19,8 @@
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   	<!-- My scripts -->
-  	<script src="./scripts/animations.js"></script>
-  	<noscript> Sorry you cannot see the JQUERY animations because your browser does not support javascript </noscript>
+  	<script src="./scripts/main.js"></script>
+  	<noscript> Sorry you cannot see the JQuery animations because your browser does not support javascript </noscript>
 </head>
 <body>
 	<div class="container">
@@ -36,79 +36,68 @@
             Sorry, your browser does not support inline SVG.
         	</svg>
 					<ul class="list-group">
-  						<li id="section1" class="list-group-item hidden-section">
+  						<li id="objective-link" class="list-group-item">
   							<img src="./res/goal.svg" width="30px" height="30px">
   							<h5>Objective</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="section2" class="list-group-item hidden-section">
+  						<li id="education-link" class="list-group-item ">
   							<img src="./res/cap.svg" width="30px" height="30px">
   							<h5>Education</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="section3" class="list-group-item hidden-section">
+  						<li id="experience-link" class="list-group-item ">
   							<img src="./res/briefcase.svg" width="30px" height="30px"> 
   							<h5>Work Experience</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="section4" class="list-group-item hidden-section">
+  						<li id="projects-link" class="list-group-item ">
   							<img src="./res/project.svg" width="30px" height="30px"> 
   							<h5>Projects</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="section5" class="list-group-item hidden-section">
+  						<li id="skills-link" class="list-group-item ">
   							<img src="./res/code.svg" width="30px" height="30px"> 
   							<h5>Skills</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="section6" class="list-group-item hidden-section">
+  						<li id="associations-link" class="list-group-item ">
   							<img src="./res/connection.svg" width="30px" height="30px"> 
   							<h5>Associations</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="section7" class="list-group-item hidden-section">
+  						<li id="contact-link" class="list-group-item ">
   					  	<img src="./res/message.svg" width="30px" height="30px"> 
   							<h5>Contact</h5>
   						</li>
-            			<li id="contact" class="list-group-item hidden-section">
-                			<p><b>Phone:</b> (323)-787-5129</p>
-                			<p><b>Email:</b> andrew.sanchez046@gmail.com</p>
-            			</li>
+            	<li class="list-group-item ">
+                	<p><b>Phone:</b> (323)-787-5129</p>
+                	<p><b>Email:</b> andrew.sanchez046@gmail.com</p>
+            	</li>
 					</ul>
 				</nav>
 			</div>
+
 			<div id="content-rule" class="col col-lg-8">	
         <!-- Welcome Message -->
         <div class="jumbotron">
           <h1>Welcome!</h1>
-          <p>Thank you for visiting my site. This site serves not only as my resume, but also a reference
-             to my Upward Bound students who are currently learning to build their own websites.</p>    
+          <p>Thank you for visiting my site. This site serves not only as my web portfolio, but also as a reference to my Upward Bound students who are currently learning to build their own websites.</p>    
         </div>
-
-        <!-- section 1 content -->
-        <div id="objective" class="card border-light w-100 hidden-section"></div>
-
-        <!-- sections 2 content -->
-      	<div id="education" class="card border-light w-100 hidden-section" style="width: 18rem;"></div>
-
-        <!-- section 3 content-->
-        <div id="experience" class="card border-light w-100 hidden-section"></div>
-
-        <!-- section 4 content-->
-        <div id="projects" class="card border-light w-100 hidden-section"></div>
-
-        <!-- section 5 content-->
-        <div id="skills" class="card border-light w-100 hidden-section"></div>
-
-        <!-- section 6 content-->
-        <div id="associations" class="card border-light w-100 hidden-section"></div>
-		</div>
-	</div>
+        <div id="holder0"></div>
+        <div id="holder1"></div>
+        <div id="holder2"></div>
+        <div id="holder3"></div>
+        <div id="holder4"></div>
+        <div id="holder5"></div>  
+      </div>
+	  </div>
+  </div>
 
   <footer id="credits">
-    <!-- Icon Credits -->
+    <!-- Icon Credits 
     <p>Icons on this page were taken from Icon Webstie. Click below to see authors.</p>
-    <button>Authors</button>
+    <button>Authors</button>-->
   </footer>
 </body>
 </html>
