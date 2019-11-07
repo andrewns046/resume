@@ -73,27 +73,51 @@ nav h5 {
 }
 
 .section-link:hover {
-	border-color: var(--wheat);
 	color: white;
 	z-index: 100;
 	-webkit-animation-name: spinborder; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
   	animation-name: spinborder;
   	animation-duration: 1s;
+  	animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes spinborder {
-  0%   {border-top-color: var(--black);}
-  25%  {border-right-color: var(--black);}
-  50%  {border-bottom-color: var(--black);}
-  75% {border-left-color: var(--black);}
+  0% {
+  	border-top-color: var(--wheat);
+  }
+
+  25% {
+  	border-right-color: var(--wheat);
+  }
+  50% {
+  	border-bottom-color: var(--wheat);
+  }
+  75% {
+  	border-left-color: var(--wheat);
+  }
+  100% {
+  	border-color: black;
+  }
 }
 
 /* Standard syntax */
 @keyframes spinborder {
-  0%   {border-top-color: var(--black);}
-  25%  {border-right-color: var(--black);}
-  50%  {border-bottom-color: var(--black);}
-  75% {border-left-color: var(--black);}
+  0% {
+  	border-top-color: var(--wheat);
+  }
+
+  25% {
+  	border-right-color: var(--wheat);
+  }
+  50% {
+  	border-bottom-color: var(--wheat);
+  }
+  75% {
+  	border-left-color: var(--wheat);
+  }
+  100% {
+  	border-color: black;
+  }
 }
