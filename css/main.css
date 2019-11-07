@@ -1,14 +1,21 @@
+/* site colors */
 :root {
-	--sailor-blue: #2e4a62;
-	--darken: #1d1d1d;
-	--dark-purple: #603cba;
 	--metro-magenta: #ff0097;
-	--metro-green: #00a300;
-	--metro-light-purple: #9f00a7;
-	--metro-yellow: #ffc40d;
-	--metro-blue: #2d98ef;
-	--metro-red: #ee1111;
+	--black: #050505;
+	--dark-grey: #181818;
+	--grey: #9b9b9b;
+	--dark-slate: #584b4f;
+	--wheat: #eed9b7;
+}
 
+body {
+	background-color: var(--dark-grey);
+	color: white;
+}
+
+.jumbotron {
+	background-color: var(--dark-slate);
+	color: var(--wheat);
 }
 
 #content-rule {
@@ -17,7 +24,7 @@
 
 #logoCenter {
     display: block;
-    margin: .5em 0 .5em;
+    margin: .5em 0 0;
     font-size: 2.3em;
 }
 
@@ -33,9 +40,21 @@
 	height: 2px;
 }
 
+#holder0, #holder1, #holder2, #holder3, #holder4, #holder5 {
+	display: none;
+}
+
+.card-body {
+	color: black;
+}
+
+.card-header {
+	color: var(--dark-slate);
+}
+
 nav {
 	position: fixed;
-	width: 22.5em;
+	width: 360px;
 }
 
 nav h5 {
@@ -43,13 +62,38 @@ nav h5 {
 	margin-left: 1rem;
 }
 
-nav li {
-	list-style: none;
+#contact-info {
+	display: none;
 }
 
-.list-group-item:hover {
+.section-link {
 	list-style: none;
-	border-color: var(--metro-magenta);
-	color: var(--metro-magenta);
+	background-color: var(--black) !important;
+	color: var(--grey);
+}
+
+.section-link:hover {
+	border-color: var(--wheat);
+	color: white;
 	z-index: 100;
+	-webkit-animation-name: spinborder; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  	animation-name: spinborder;
+  	animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes spinborder {
+  0%   {border-top-color: var(--black);}
+  25%  {border-right-color: var(--black);}
+  50%  {border-bottom-color: var(--black);}
+  75% {border-left-color: var(--black);}
+}
+
+/* Standard syntax */
+@keyframes spinborder {
+  0%   {border-top-color: var(--black);}
+  25%  {border-right-color: var(--black);}
+  50%  {border-bottom-color: var(--black);}
+  75% {border-left-color: var(--black);}
 }

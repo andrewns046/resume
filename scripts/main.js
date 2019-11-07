@@ -6,7 +6,7 @@ var sections = [ {sectionName:"objective", sectionSelector:"#objective", isLoade
 			     {sectionName:"skills" , sectionSelector:"#skills", isLoaded:false},
 			     {sectionName:"associations", sectionSelector:"#associations", isLoaded:false}];
 
-var numHolders = 6;
+var numHolders = 6;  // number of section holders to load.
 
 // when document is ready
 $(document).ready(function(){
@@ -23,6 +23,8 @@ $(document).ready(function(){
 		addNavListener(sections[i], isMobile);
 	}
 
+	// contact info
+	$("#contact-link").click(function() {$("#contact-info").fadeIn(1000);});
 });
 
 /*
@@ -39,6 +41,9 @@ function addNavListener( sectionObject, isMobile ) {
 			sectionObject.isLoaded = cardLoad(sectionObject.sectionName, sectionObject.sectionSelector, isMobile);
 		}		
 	});
+
+	//TODO save y positions of pages loaded on window make a scroll listener 
+	//that highlights the current section
 }
 
 /*
@@ -61,7 +66,10 @@ function cardLoad(sectionName , sectionSelector, isMobile ) {
 		var result = 6 - numHolders;
 		loadLocator = "#holder"+result;
 		numHolders = numHolders - 1;  //update sections left
-		$(loadLocator).load(sectionHTMLPath);
+		$(loadLocator).load(sectionHTMLPath, function(){
+			// once loaded fade in section
+			$(loadLocator).fadeIn(1000);
+		});
 		$(loadLocator).after("<br>");
 	}
 

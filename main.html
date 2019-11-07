@@ -9,14 +9,14 @@
 
   	<!-- Bootstrap Style Sheet -->
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  	
-  	<!-- My Styles Sheets -->
-  	<link rel="stylesheet" href="./css/main.css">
 
   	<!-- Bootstrap Scripts -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   	</script>
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- My Styles Sheets -->
+    <link rel="stylesheet" href="./css/main.css">
 
   	<!-- My scripts -->
   	<script src="./scripts/main.js"></script>
@@ -24,53 +24,53 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
+    <div class="row">
 			<div class="col col-lg-4">
         <nav>
         	<svg id="logoCenter" width="360" height="80">
-            <rect width="300" height="80" style="fill:rgb(35,31,32)" />
+            <rect width="300" height="80" style="fill:rgb(5,5,5)" />
       			<rect x="300" width="20" height="80" style="fill:rgb(0,162,229)" />
       			<rect x="320" width="20" height="80" style="fill:rgb(230,22,16)" />
           	<rect x="340" width="20" height="80" style="fill:rgb(254,251,100)" />
-            <text x="10" y="60" fill="white">Andrew Sanchez</text>
+            <text x="10" y="61" fill="white">Andrew Sanchez</text>
             Sorry, your browser does not support inline SVG.
         	</svg>
 					<ul class="list-group">
-  						<li id="objective-link" class="list-group-item">
+  						<li id="objective-link" class="list-group-item section-link">
   							<img src="./res/goal.svg" width="30px" height="30px">
   							<h5>Objective</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="education-link" class="list-group-item ">
+  						<li id="education-link" class="list-group-item section-link">
   							<img src="./res/cap.svg" width="30px" height="30px">
   							<h5>Education</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="experience-link" class="list-group-item ">
+  						<li id="experience-link" class="list-group-item section-link">
   							<img src="./res/briefcase.svg" width="30px" height="30px"> 
   							<h5>Work Experience</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="projects-link" class="list-group-item ">
+  						<li id="projects-link" class="list-group-item section-link">
   							<img src="./res/project.svg" width="30px" height="30px"> 
   							<h5>Projects</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="skills-link" class="list-group-item ">
+  						<li id="skills-link" class="list-group-item section-link">
   							<img src="./res/code.svg" width="30px" height="30px"> 
   							<h5>Skills</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="associations-link" class="list-group-item ">
+  						<li id="associations-link" class="list-group-item section-link">
   							<img src="./res/connection.svg" width="30px" height="30px"> 
   							<h5>Associations</h5>
                 <!--Will load content to mobile here-->
   						</li>
-  						<li id="contact-link" class="list-group-item ">
+  						<li id="contact-link" class="list-group-item section-link">
   					  	<img src="./res/message.svg" width="30px" height="30px"> 
-  							<h5>Contact</h5>
+  							<h5>Contact Me!</h5>
   						</li>
-            	<li class="list-group-item ">
+            	<li id="contact-info" class="list-group-item">
                 	<p><b>Phone:</b> (323)-787-5129</p>
                 	<p><b>Email:</b> andrew.sanchez046@gmail.com</p>
             	</li>
@@ -82,14 +82,16 @@
         <!-- Welcome Message -->
         <div class="jumbotron">
           <h1>Welcome!</h1>
-          <p>Thank you for visiting my site. This site serves not only as my web portfolio, but also as a reference to my Upward Bound students who are currently learning to build their own websites.</p>    
+          <hr class="my-4">
+          <p>Thank you for visiting my site. This site serves not only as my web portfolio, but also as a reference to my Upward Bound students who are currently learning to build their own websites.</p>
+          <!-- 8 Bit dude running towards projects -->
         </div>
-        <div id="holder0"></div>
-        <div id="holder1"></div>
-        <div id="holder2"></div>
-        <div id="holder3"></div>
-        <div id="holder4"></div>
-        <div id="holder5"></div>  
+        <div id="holder0" class=".hidden-section"></div>
+        <div id="holder1" class=".hidden-section"></div>
+        <div id="holder2" class=".hidden-section"></div>
+        <div id="holder3" class=".hidden-section"></div>
+        <div id="holder4" class=".hidden-section"></div>
+        <div id="holder5" class=".hidden-section"></div>  
       </div>
 	  </div>
   </div>
