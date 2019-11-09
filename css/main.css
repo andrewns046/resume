@@ -6,27 +6,25 @@
 	--grey: #9b9b9b;
 	--dark-slate: #584b4f;
 	--wheat: #eed9b7;
-	--cadetblue: #78af9f;
 }
 
-body {
+.jumbotron, pre{
 	background-color: var(--dark-grey);
-	color: white;
-}
-
-.jumbotron {
-	background-color: var(--dark-slate);
 	color: var(--wheat);
 }
 
-#content-rule {
+.jumbotron hr {
+	border-color: wheat; 
+}
+
+
+.content-rule {
 	margin-top: 20px;
 }
 
 #logoCenter {
     display: block;
-    margin: 20px 0 0;
-    font-size: 34px;
+    font-size: 1.5rem;
 }
 
 #gradPic {
@@ -46,23 +44,30 @@ body {
 }
 
 .card-body {
-	color: black;
+	color: dimgray;
+} 
+
+.card-header, .card-body h5 {
+	color: white;
+	background-color: var(--dark-grey)
 }
 
-.card-header {
-	color: var(--cadetblue);
-	background-color: var(--black);
+.card-body h5 {
+
+	padding: .2rem .5rem;
+
 }
 
-nav {
+.custom-nav {
+	margin-top: 20px;
 	position: fixed;
-	width: 320px;
 }
 
-nav h5 {
+.custom-nav h5 {
 	display: inline-block;
 	margin-left: 1rem;
 }
+
 
 #contact-info {
 	display: none;
@@ -70,12 +75,12 @@ nav h5 {
 
 .section-link {
 	list-style: none;
-	background-color: var(--black) !important;
-	color: var(--grey);
+	/*background-color: var(--black) !important;
+	color: var(--grey);*/
 }
 
 .section-link-highlight:hover {
-	color: white;
+	color: var(--metro-magenta);
 	z-index: 100;
 	-webkit-animation-name: spinborder; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
@@ -87,39 +92,39 @@ nav h5 {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes spinborder {
   0% {
-  	border-top-color: var(--wheat);
+  	border-top-color: var(--metro-magenta);
   }
 
   25% {
-  	border-right-color: var(--wheat);
+  	border-right-color: var(--metro-magenta);
   }
   50% {
-  	border-bottom-color: var(--wheat);
+  	border-bottom-color: var(--metro-magenta);
   }
   75% {
-  	border-left-color: var(--wheat);
+  	border-left-color: var(--metro-magenta);
   }
   100% {
-  	border-color: black;
+  	border-color: lightgrey;
   }
 }
 
 /* Standard syntax */
 @keyframes spinborder {
   0% {
-  	border-top-color: var(--wheat);
+  	border-top-color: var(--metro-magenta);
   }
 
   25% {
-  	border-right-color: var(--wheat);
+  	border-right-color: var(--metro-magenta);
   }
   50% {
-  	border-bottom-color: var(--wheat);
+  	border-bottom-color: var(--metro-magenta);
   }
   75% {
-  	border-left-color: var(--wheat);
+  	border-left-color: var(--metro-magenta);
   }
   100% {
-  	border-color: black;
+  	border-color: lightgrey;
   }
 }

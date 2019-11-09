@@ -1,4 +1,6 @@
-<!-- Need to test using python server-->
+<!-- Need to test using python server -->
+<!-- python -m http.server 8000 -->
+<!-- Next type localhost:8000 into browser --> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,17 +27,9 @@
 <body>
 	<div class="container">
     <div class="row">
-			<div class="col col-lg-4">
-        <nav>
-        	<svg id="logoCenter" width="320" height="71">
-            <rect width="266" height="80" style="fill:rgb(5,5,5)" />
-            <rect x="266" width="18" height="71" style="fill:rgb(0,162,229)" />
-            <rect x="284" width="18" height="71" style="fill:rgb(230,22,16)" />
-            <rect x="302" width="18" height="71" style="fill:rgb(254,251,100)" />
-            <text x="9" y="49" fill="white">Andrew Sanchez</text>
-            Sorry, your browser does not support inline SVG.
-          </svg>
-					<ul class="list-group">
+			<div class="col col-lg-3">
+        <div class="custom-nav rounded-lg shadow">
+					<ul id="navList" class="list-group">
   						<li id="objective-link" class="list-group-item section-link section-link-highlight">
   							<img src="./res/goal.svg" width="30px" height="30px">
   							<h5>Objective</h5>
@@ -71,35 +65,43 @@
   							<h5>Contact Me!</h5>
   						</li>
             	<li id="contact-info" class="list-group-item section-link">
-                	<p><b>Phone:</b> (323)-787-5129</p>
-                	<p><b>Email:</b> andrew.sanchez046@gmail.com</p>
+                	<b>Phone:</b> 
+                	<p><small>(323)-787-5129</small></p>
+                	<b>Email:</b>
+                	<p><small>andrew.sanchez046@gmail.com</small></p>
             	</li>
 					</ul>
-				</nav>
+				</div>
 			</div>
 
-			<div id="content-rule" class="col col-lg-8">	
+			<div class="col col-lg-9 content-rule">	
         <!-- Welcome Message -->
         <div class="jumbotron">
-          <h1>Welcome!</h1>
+          <!--<h1>Welcome!</h1>-->
+          <pre>
+██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗    ██╗
+██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝    ██║
+██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗      ██║
+██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝      ╚═╝
+╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗    ██╗
+ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝    ╚═╝
+                                                                     
+</pre>
           <hr class="my-4">
           <p>Thank you for visiting my site. This site serves not only as my web portfolio, but also as a reference to my Upward Bound students who are currently learning to build their own websites.</p>
-          <!-- 8 Bit dude running towards projects -->
+
+
+
+          <div><small class="text-muted">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a>, and <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik </a>from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></div>
         </div>
-        <div id="holder0" class=".hidden-section"></div>
-        <div id="holder1" class=".hidden-section"></div>
-        <div id="holder2" class=".hidden-section"></div>
-        <div id="holder3" class=".hidden-section"></div>
-        <div id="holder4" class=".hidden-section"></div>
-        <div id="holder5" class=".hidden-section"></div>  
+        <div id="holder0"></div>
+        <div id="holder1"></div>
+        <div id="holder2"></div>
+        <div id="holder3"></div>
+        <div id="holder4"></div>
+        <div id="holder5"></div>  
       </div>
 	  </div>
   </div>
-
-  <footer id="credits">
-    <!-- Icon Credits 
-    <p>Icons on this page were taken from Icon Webstie. Click below to see authors.</p>
-    <button>Authors</button>-->
-  </footer>
 </body>
 </html>
