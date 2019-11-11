@@ -59,13 +59,20 @@
 }
 
 .custom-nav {
-	margin-top: 20px;
 	position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .custom-nav h5 {
 	display: inline-block;
 	margin-left: 1rem;
+}
+
+.custom-nav li {
+  border-left: 0;
+  border-right: 0;
 }
 
 

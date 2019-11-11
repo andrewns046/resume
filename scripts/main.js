@@ -51,9 +51,6 @@ function addNavListener( sectionObject, isMobile ) {
 			location.href = sectionObject.sectionSelector;
 		}		
 	});
-
-	//TODO save y positions of pages loaded on window make a scroll listener 
-	//that highlights the current section
 }
 
 /*
@@ -69,7 +66,7 @@ function cardLoad(sectionName , sectionSelector, isMobile ) {
 	var sectionHTMLPath = "../" + sectionName +".html " + sectionSelector;
 	if( isMobile == true) {
 		//create new list item after section link 
-		$(sectionSelector+"-link").after("<li id='mobile-section-" + sectionName +"'></li>");
+		$(sectionSelector+"-link").after("<div id='mobile-section-" + sectionName +"'></div>");
 		$("#mobile-section-"+sectionName).load(sectionHTMLPath);
 	}
 	else {
