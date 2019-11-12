@@ -9,6 +9,8 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    
   	<!-- Bootstrap Style Sheet -->
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -25,83 +27,67 @@
   	<noscript> Sorry you cannot see the JQuery animations because your browser does not support javascript </noscript>
 </head>
 <body>
-	<div class="container-fluid">
-    <div class="row">
-			<div class="col col-lg-3">
-        <div class="custom-nav rounded-lg shadow">
-					<ul id="navList" class="list-group">
-  						<li id="objective-link" class="list-group-item section-link section-link-highlight">
-  							<img src="./res/goal.svg" width="30px" height="30px">
-  							<h5>Objective</h5>
-                <!--Will load content to mobile here-->
-  						</li>
-  						<li id="education-link" class="list-group-item section-link section-link-highlight">
-  							<img src="./res/cap.svg" width="30px" height="30px">
-  							<h5>Education</h5>
-                <!--Will load content to mobile here-->
-  						</li>
-  						<li id="experience-link" class="list-group-item section-link section-link-highlight">
-  							<img src="./res/briefcase.svg" width="30px" height="30px"> 
-  							<h5>Work Experience</h5>
-                <!--Will load content to mobile here-->
-  						</li>
-  						<li id="projects-link" class="list-group-item section-link section-link-highlight">
-  							<img src="./res/project.svg" width="30px" height="30px"> 
-  							<h5>Projects</h5>
-                <!--Will load content to mobile here-->
-  						</li>
-  						<li id="skills-link" class="list-group-item section-link section-link-highlight">
-  							<img src="./res/code.svg" width="30px" height="30px"> 
-  							<h5>Skills</h5>
-                <!--Will load content to mobile here-->
-  						</li>
-  						<li id="associations-link" class="list-group-item section-link section-link-highlight">
-  							<img src="./res/connection.svg" width="30px" height="30px"> 
-  							<h5>Associations</h5>
-                <!--Will load content to mobile here-->
-  						</li>
-  						<li id="contact-link" class="list-group-item section-link section-link-highlight">
-  					  	<img src="./res/message.svg" width="30px" height="30px"> 
-  							<h5>Contact Me!</h5>
-  						</li>
-            	<li id="contact-info" class="list-group-item section-link">
-                	<b>Phone:</b> 
-                	<p><small>(323)-787-5129</small></p>
-                	<b>Email:</b>
-                	<p><small>andrew.sanchez046@gmail.com</small></p>
-            	</li>
-              <!-- TODO: Add download resume button -->
-              <!-- Add quicklinks -->
-					</ul>
-				</div>
-			</div>
+  <nav class="custom-nav shadow">
+    <div id="logoContainer"></div>
+			<ul id="navList" class="list-group">
+  			<li id="objective-link" class="list-group-item section-link section-link-highlight">
+          <img src="./res/icons/goal.svg" width="30px" height="30px">  
+          <h5>Objective</h5>
+  			</li>
+  			<li id="education-link" class="list-group-item section-link section-link-highlight">	
+  			  <img src="./res/icons/cap.svg" width="30px" height="30px">  
+          <h5>Education</h5>
+  			</li>
+  			<li id="experience-link" class="list-group-item section-link section-link-highlight">
+  				<img src="./res/icons/briefcase.svg" width="30px" height="30px"> 
+  				<h5>Work Experience</h5>       
+  			</li>
+  			<li id="projects-link" class="list-group-item section-link section-link-highlight">
+  				<img src="./res/icons/project.svg" width="30px" height="30px"> 
+  				<h5>Projects</h5>
+        </li>
+  			<li id="skills-link" class="list-group-item section-link section-link-highlight">
+  			  <img src="./res/icons/code.svg" width="30px" height="30px"> 
+  			  <h5>Skills</h5>
+  			</li>
+  			<li id="associations-link" class="list-group-item section-link section-link-highlight">
+  				<img src="./res/icons/connection.svg" width="30px" height="30px"> 
+  				<h5>Associations</h5>
+  			</li>
+  			<li id="contact-link" class="list-group-item section-link section-link-highlight">
+  				<img src="./res/icons/message.svg" width="30px" height="30px"> 
+  				<h5>Contact Me!</h5>
+  			</li>
+			</ul>
+	</nav>
 
-			<div class="col col-lg-9 content-rule">	
-        <!-- Welcome Message -->
-        <div class="jumbotron">
-          <!--<h1>Welcome!</h1>-->
-          <pre>
+	<div class="content-rule">	
+    <header class="page-header">
+      <h2 class="page-header-text">Projects</h2>
+    </header>
+    <div class="page-content">
+      <div class="jumbotron welcome-banner">
+        <pre>
 ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗    ██╗
 ██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝    ██║
 ██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗      ██║
 ██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝      ╚═╝
 ╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗    ██╗
  ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝    ╚═╝
-                                                                     
 </pre>
-          <hr class="my-4">
-          <p>Thank you for visiting my site. This site serves not only as my web portfolio, but also as a reference to my Upward Bound students who are currently learning to build their own websites.</p>
-          <p>If you are here to view some of my "projects", click the projects link in the nav.</p>
-          <div><small class="text-muted">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a>, and <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik </a>from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></div>
-        </div>
-        <div id="holder0"></div>
-        <div id="holder1"></div>
-        <div id="holder2"></div>
-        <div id="holder3"></div>
-        <div id="holder4"></div>
-        <div id="holder5"></div>  
+        <div id="close-banner-btn">x</div>
+        <hr class="my-4">
+        <p>Thank you for visiting my site. This site serves not only as my web portfolio, but also as a reference to my Upward Bound students who are currently learning to build their own websites.</p>
+        <p>If you are here to view some of my "projects", click the projects link in the nav.</p>
+        <div><small class="text-muted">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a>, and <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik </a>from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></div>
       </div>
-	  </div>
+      <div id="holder0"></div>
+      <div id="holder1"></div>
+      <div id="holder2"></div>
+      <div id="holder3"></div>
+      <div id="holder4"></div>
+      <div id="holder5"></div>  
+    </div>
   </div>
 </body>
 </html>

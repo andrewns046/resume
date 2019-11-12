@@ -8,31 +8,70 @@
 	--wheat: #eed9b7;
 }
 
-.jumbotron, pre{
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.col img {
+  max-width: inherit;
+}
+
+.preview-photo {
+  width: 400px;
+}
+
+.preview-title {
+  margin: .5em .5em; 
+}
+
+.preview-btn {
+  margin: .5em .5em;
+}
+
+.page-header {
+  background-color: var(--dark-grey);
+  color: white;
+  padding: .5rem 2rem;
+}
+
+.page-content {
+  padding: 1rem 2rem;
+}
+
+.content-rule {
+  margin-left: 25%;
+}
+
+/* -- Welcome Banner Styles -- */
+.welcome-banner {
+  position: relative;
 	background-color: var(--dark-grey);
 	color: var(--wheat);
 }
 
-.jumbotron hr {
+pre {
+  background-color: var(--dark-grey);
+  color: var(--wheat);
+}
+
+.welcome-banner hr {
 	border-color: wheat; 
 }
 
-
-.content-rule {
-	margin-top: 20px;
+#close-banner-btn {
+  position: absolute;
+  top: .5em;
+  right: 1em;
+  font-size: 1.2em;
 }
 
-#logoCenter {
-    display: block;
-    font-size: 1.5rem;
+#close-banner-btn:hover {
+  cursor: pointer;
+  color: var(--dark-slate);
 }
 
 #gradPic {
 	max-height: 400px;
-}
-
-.col img {
-	max-width: 100%
 }
 
 .progress {
@@ -43,6 +82,7 @@
 	display: none;
 }
 
+/* Overwrite card styles */
 .card-body {
 	color: dimgray;
 } 
@@ -53,16 +93,30 @@
 }
 
 .card-body h5 {
-
 	padding: .2rem .5rem;
 
 }
 
-.custom-nav {
-	position: fixed;
-  top: 0;
-  left: 0;
+/* -- Navbar Styling  -- */
+#logoCenter {
+    display: block;
+    font-size: 1.5em;
+}
+
+#logoContainer {
+  display: block; 
+  background-color: var(--black);
+ }
+
+.custom-nav{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top:0;
+  left:0;
+  width: 25%;
   height: 100%;
+  overflow: auto;
 }
 
 .custom-nav h5 {
@@ -75,10 +129,6 @@
   border-right: 0;
 }
 
-
-#contact-info {
-	display: none;
-}
 
 .section-link {
 	list-style: none;
