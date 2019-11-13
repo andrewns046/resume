@@ -1,29 +1,43 @@
 <!-- sections 2 content -->
-<div id="education">              
+<div id="education">
+  <style>
+    .progress {
+      height: 2px;
+    }
+    #bars label {
+      margin: .5em 0;
+    }
+    .edu-title {
+      margin-top: 1em;
+    }
+  </style>
   <div class="row">
-    <div class="col">
-      <h5>B.S Computer Engineering</h5>
+    <div class="col col-sm-6">
+      <img class="rounded" src="./res/grad_pic.png">
+      <h5 class="edu-title">B.S Computer Engineering</h5>
       <div>UC San Diego</div>
       <div>2015-2019</div>
       <div>Upper Major GPA: 3.28</div>
     </div>
     
-    <div class="col">
-      <img id="gradPic" src="./res/grad_pic.png">
+    <div class="col col-sm-6">
+      <!-- Add course list -->
+      <span><img src="./res/icons/construction.svg" width="40">Course list coming soon</span>
     </div>
   </div>
 
   <hr class="my-4">
               
   <div class="row">
-    <div class="col">
-      <h5>James A. Garfield High School</h5>
+    <div class="col col-sm-6">
+      <img src="./res/eastla.jpg" class="rounded">
+      <h5 class="edu-title">James A. Garfield High School</h5>
       <div>East Los Angeles, CA</div>
       <div>Class of 2015</div>
       <div>High School GPA: 4.37</div>
     </div>
     
-    <div class="col">
+    <div id="bars" class="col col-sm-6">
       <label>SAT: 1840</label>
       <div class="progress">
         <div class="progress-bar bg-success" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>

@@ -10,7 +10,7 @@ const numSections = 6;
 const fadeSpeed = 2000; // two second fades
 const logoName = "Andrew Sanchez";
 var lastActiveSectionSelector = "#projects";
-var toLoad = 6;  // number of sections left to load 
+var lastActiveSectionIndex = 0;
 
 
 // when document is ready
@@ -19,6 +19,8 @@ $(document).ready(function(){
 	
 	// make svg logo
 	makeLogo();
+
+	window.addEventListener('resize', makeLogo);
 
 	// mobile condition
 	if (typeof window.orientation !== 'undefined') {
@@ -34,11 +36,11 @@ $(document).ready(function(){
 	// add nav click listeners
 	var i = 0;
 	for(i = 0; i < sections.length; i++) {
-		addNavListener(sections[i]);
+		addNavListener(sections[i], i);
 	}
 
 	// load launch page
-	pageLoad( sections[3] );
+	pageLoad( sections[3], 3);
 
 });
 
@@ -47,14 +49,14 @@ $(document).ready(function(){
  * Arguments:
  *     sectionObject - (Object) Contains section information
  */
-function addNavListener( sectionObject ) {
+function addNavListener( sectionObject, index ) {
 	// query nav section list item
 	$(`${sectionObject.sectionSelector}-link`).click(function() {
 		if( lastActiveSectionSelector != sectionObject.sectionSelector) { 
 			if(sectionObject.isLoaded == false) {  // if section is not loaded
-				sectionObject.isLoaded = pageLoad(sectionObject);
+				sectionObject.isLoaded = pageLoad(sectionObject, index);
 			} else {
-				pageTransition(sectionObject);
+				pageTransition(sectionObject, index);
 			}
 		}
 	});
@@ -65,34 +67,35 @@ function addNavListener( sectionObject ) {
  * Arguments:
  *     sectionObject - (Object) Contains section information
  */
-function pageTransition( sectionObject ) {
+function pageTransition( sectionObject, index ) {
 	// hide last section
-	$(lastActiveSectionSelector).hide('fast');
-	lastActiveSectionSelector = sectionObject.sectionSelector;
+	$(`#holder${lastActiveSectionIndex}`).hide('fast');
 	// update header
 	$(".page-header-text").text(sectionObject.sectionName);
 	// show selected section
-	$(sectionObject.sectionSelector).fadeIn(fadeSpeed);
-	// TODO: highlight selected section in navbar
-}
+	$(`#holder${index}`).fadeIn(fadeSpeed);
+	// highlight selected section in navbar
+	$(`${lastActiveSectionSelector}-link`).removeClass("section-link-active");
+	$(`${sectionObject.sectionSelector}-link`).addClass("section-link-active");
 
+	lastActiveSectionSelector = sectionObject.sectionSelector;
+	lastActiveSectionIndex = index;
+}
 
 /*
  * loads html pages in the order they were requested
  * Arguments:
  *    sectionObject - (Object) Contains section information
  */
-function pageLoad( sectionObject ) {
+function pageLoad( sectionObject, index ) {
 	var loadLocator = "";
 	var sectionHTMLPath = "../" + String(sectionObject.sectionName).toLowerCase() +".html " + sectionObject.sectionSelector;
-	var result = numSections - toLoad;
-	loadLocator = "#holder" + result;
-	toLoad = toLoad - 1;  //update sections left
+	loadLocator = "#holder" + index;
 
 	$(loadLocator).load(sectionHTMLPath, function(){
 		// once loaded fade in section
 		$(loadLocator).fadeIn(fadeSpeed);
-		pageTransition(sectionObject);
+		pageTransition(sectionObject, index);
 	});
 
 	$(loadLocator).after("<br>");

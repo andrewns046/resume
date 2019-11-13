@@ -6,6 +6,7 @@
 	--grey: #9b9b9b;
 	--dark-slate: #584b4f;
 	--wheat: #eed9b7;
+  --cadet-blue: #78af9f;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 .page-header {
   background-color: var(--dark-grey);
   color: white;
-  padding: .5rem 2rem;
+  padding: 1.2rem 2rem;
 }
 
 .page-content {
@@ -39,7 +40,7 @@ body {
 }
 
 .content-rule {
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 /* -- Welcome Banner Styles -- */
@@ -70,37 +71,14 @@ pre {
   color: var(--dark-slate);
 }
 
-#gradPic {
-	max-height: 400px;
-}
-
-.progress {
-	height: 2px;
-}
-
 #holder0, #holder1, #holder2, #holder3, #holder4, #holder5 {
 	display: none;
-}
-
-/* Overwrite card styles */
-.card-body {
-	color: dimgray;
-} 
-
-.card-header, .card-body h5 {
-	color: white;
-	background-color: var(--dark-grey)
-}
-
-.card-body h5 {
-	padding: .2rem .5rem;
-
 }
 
 /* -- Navbar Styling  -- */
 #logoCenter {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.7rem;
 }
 
 #logoContainer {
@@ -114,7 +92,7 @@ pre {
   padding: 0;
   top:0;
   left:0;
-  width: 25%;
+  width: 20%;
   height: 100%;
   overflow: auto;
 }
@@ -132,11 +110,9 @@ pre {
 
 .section-link {
 	list-style: none;
-	/*background-color: var(--black) !important;
-	color: var(--grey);*/
 }
 
-.section-link-highlight:hover {
+.section-link:hover:not(.section-link-active) {
 	color: var(--metro-magenta);
 	z-index: 100;
 	-webkit-animation-name: spinborder; /* Safari 4.0 - 8.0 */
@@ -144,6 +120,11 @@ pre {
   	animation-name: spinborder;
   	animation-duration: 1s;
   	animation-iteration-count: infinite;
+}
+
+.section-link-active {
+  background-color: lightgrey;
+  color: var(--cadet-blue);
 }
 
 /* Safari 4.0 - 8.0 */
